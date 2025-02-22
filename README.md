@@ -46,6 +46,14 @@
   
 ---
 
+## Deployment
+
+This project is deployed on GitHub Pages. You can access the live version of the app by clicking on the link below:
+
+[Live Demo - Focus on Today](https://anujpanwarr.github.io/Focus-on-Today/)
+
+---
+
 ## Example
 
 Here's an example of how the application looks:
