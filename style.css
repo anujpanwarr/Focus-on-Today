@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+    background-color: #F2F9ED;
+    min-height: 1200px
+
+
+}
+body h1 span{
+    color: #48A300;
+    
+}
+body h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin: 20px 0px 10px 0px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+   
+    padding: 40px;
+    gap: 20px;
+}
+.main img{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+.imgdiv{
+    font-size: 32px;
+    font-weight: 700;
+}
+.main p{
+    text-align: center;
+}
+.round{
+    display: flex;
+    flex-direction: row;
+    padding: 25px 0px 25px 25px;
+    border: solid #D9D9D9;
+    border-radius: 15px;
+    margin: 0px 0px 20px 0px;
+   
+}
+
+.self_start{
+    align-self: flex-start;
+}
+
+.round span{
+    flex-grow: 0.2;
+    color: #D9D9D9;
+}
+.div_notification span{
+    color: #FF5151;
+    visibility: hidden;
+}
+.div_notification_2 span{
+    font-size: 20px;
+    font-weight: 700;
+}
+p{
+    margin-top:10px;
+    font-size: 13px;
+    margin-bottom: -10px;
+}
+.div_2{
+    color: #858585;
+} */
+
+/* .div1_3{
+    
+    border: solid #D9D9D9;
+    border-radius: 15px;
+    min-height: 25px;
+    margin: -10px 0px -10px 0px;
+    
+    position: relative;
+    overflow: hidden;
+} */
+/* .fill{
+    position: absolute;
+    border-radius: 15px;
+    min-height: 25px;
+    width: 0px;
+    background-color: green;
+    transition: width 0.3s ease-in-out;
+    
+} */
+body{
+    background: color #f2f9ed;
+    padding: 30px;
+    min-width: 293px;
+    transition: opacity 0.10s ease;
+
+}
+
+
+h1 span{
+    color: #48A300;
+} 
+h1{
+    text-align: center;
+    margin: 20px 0px 15px 0px;
+}
+
+.main{
+    margin: auto;
+    padding: 10px 30px 10px 30px;
+    max-width: 500px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.main_tittle{
+    font-size: 23px;
+    font-weight: 700;
+    
+}
+.main_tittle img{
+    vertical-align: middle;
+    width: 35px;
+}
+.note{
+    color: #858585;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px; 
+}
+.note img {
+    width: 20px;
+    visibility: hidden;
+}
+.Parent_level{
+    height: 30px;
+    max-width: 400px;
+    background-color: #48A3001A;
+    border-radius: 15px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    padding: 3px;
+}
+.Child_level{
+    min-height: 100%;
+    max-width: 0%;
+    background-color: #48A300;
+    border-radius: 15px;
+    transition: width 0.3s ease-in-out;
+    /* border: solid black; */
+}
+
+.Alert{
+    color: #FF5151;
+    font-size: 14px;
+    font-weight: 400; 
+    visibility:hidden;
+}
+
+.checkbox{
+    height: 70px;
+    max-width: 400px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border: solid #0000001A;
+    display: flex;
+}
+
+.check_circle{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: solid #61481C4D;
+    margin-left: 10px;
+    align-self: center;
+    flex-shrink: 0;
+}
+.check{
+    border-radius: 15px;
+    border-style: none;
+    outline: none;
+    flex-grow: 2;
+    padding-left: 15px;
+    
+    
+}
+.add_pointer{
+    pointer-events: none;
+}
+.check::placeholder{
+    color: #D9D9D9;
+}
+
+.note_2{
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.note_3{
+    font-size: 11px;
+    font-weight: 600;
+    color: #858585;
+    text-align: center;
+    margin-top: 30px;
+}
+.button{
+    margin: auto;
+    border-radius: 15px;
+    background-color: #b49f9f;
+    color: white;
+    font-size: 12px;
+    padding: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.button:active {
+    .button{
+        background-color: white;
+        color:black;
+    }
+}
+
+@media(max-width:360px){
+    .note_2{
+        letter-spacing: 0px;
+        font-size:12px;
+    }
+    .check{
+        flex-shrink: 2;
+        padding-left: 5px;
+        min-width: 40px;
+    }
+    .note{
+        color: #858585;
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: -0.1px;
+    }
+    .Alert{
+        font-size: 11px;
+        font-weight: 500; 
+    }
+    .checkbox{
+        height: 50px;
+    }
+    .note_3{
+        font-size: 8px;
+        font-weight: 600;
+
+    }
+}
+
+.add_check_circle{
+    background-color: #48A300;
+}
+.add_check{
+    color: #48A300;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+/* .add_level {
+    max-width: 33% !important;
+} */
+
+
+
